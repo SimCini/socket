@@ -14,7 +14,7 @@ for i in range(NUM_MESSAGES):
   print(f"Messaggio inviato al server: {message}")
   #Ricezione della risposta dal server 
   data, addr = sock.recvfrom (BUFFER_SIZE) 
-  print(f"Messaggio ricevuto dal server {addr}: (data.decode())")
+  print(f"Messaggio ricevuto dal server {addr}: {data.decode()}")
   
 #Chiusura del socket
 sock.close()

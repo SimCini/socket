@@ -11,7 +11,7 @@ print("Server in attesa di messaggi...")
 while True:
   #Ricezione dei dati dal client
   data, addr = sock.recvfrom (BUFFER_SIZE)
-  print(f"Messaggio ricevuto dal client {addr}: (data.decode())")
+  print(f"Messaggio ricevuto dal client {addr}: {data.decode()}")
 
   # Invio di una risposta al client
   reply = "pong" 
